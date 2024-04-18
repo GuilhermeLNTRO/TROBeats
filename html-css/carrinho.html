@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="The Real Ones, trap, beat, brasília, compra e venda" />
 	<meta name="description" content="Compre e venda seus beats no site do The Real Ones">
-	<link rel="stylesheet" type="text/css" href="carrinho.css">
-
+	<link rel="stylesheet" type="text/css" href="css/carrinho.css">
+	<script src="JS/carrinho.js" type="module"></script>
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 	<title>The Real Ones</title>
 </head>
-
 <body>
 	<header>
 		<nav class="nav-1">
@@ -31,7 +30,6 @@
 				<a href="#">
 					<img id="img-nav" src="img/carrinho.png" alt="Carrinho de compras">
 				</a>
-
 				<a href="login.html">
 					<img id="img-nav" src="img/login.png" alt="Login/Cadastro">
 				</a>
@@ -40,12 +38,10 @@
 	</header>
 	<section>
 		<main>
-			<h1>Carrinho</h1>
+			<h1 >Carrinho</h1>
 			<form action="" class="display-carrinho">
-
 				<div class="caixa">
 					<div id="pt-produto">
-
 						<div class="produto" id="card-1">
 							<img src="img/capa-TRO.png" class="img-card" alt="">
 							<div>
@@ -79,43 +75,66 @@
 					<p>Taxas: R$00,00</p>
 				</div>
 				<div class="forma-pagamento">
-					<label for="forma-pagamento " class="name-pag">Escolha dos Pagamentos:</label><br>
-					<select id="seletor-pagamento" name="Escolha dos Pagamentos">
-						<option value="PIX">Pix</option>
-						<option value="BOLETO">Boleto</option>
-						<option value="CREDITO">Crédito</option>
-					</select>
-					<ul class="separator">
-						<li></li>
-					</ul>
+					<div id="terceiro-card">
+					<form id="form-ultimo">
+					<p>Pagamento</p>
+					<fieldset id="cartoes">
 
-					<p>Valor-total: R$ 140,00</p>
-					<div class="botao-comprar">
-						<div class="comprar">
-							<a href="index.html">Finalizar Compra</a>
-						</div>
+						<legend>Forma de Pagamento</legend>
+
+						<input id="visa" type="radio" name="genero" value="masc"> 
+						<img src="img/visa.png">
+
+						<input id="master" type="radio" name="genero" value="masc"> 
+						<img src="img/master.png">
+
+						<input id="amex" type="radio" name="genero" value="masc"> 
+						<img src="img/amex.png">
+						
+						
+					</fieldset>
+
+				<div id="main-container">
+					<form id="register-form" action="">
+					<div class="half-box1">
+						<label for="cc">Número do cartão</label>
+						<input class="val" type="text" name="cc" id="cc" placeholder="Numero do cartao" pattern="[0-9]{12}" required onkeyup="verifBandeira()" />
 					</div>
-					<img src="img/formapag.png" alt="" class="bandeiras-pagamento">
+					<div class="half-box2">
+						<label for="">Data de validade:</label>
+					<div>
+						<input type="text" name="mes" id="mes" placeholder="MM" />
+						/
+						<input type="text" name="ano" id="ano" placeholder="AAAA" />
+					</div>
+					</div>
+
+				</div>		
+				<div id="botoes-form">
+					<input type="submit" name="enviar" value="Enviar" />
+					<input type="reset" name="limpar" value="Limpar" />
+				</div>
+				<center>
+					<span id="erro-cartao" oninput=" verifBandeira(this.value)" style="color: red;"></span>
+				</center>
+				</form>
+				</div>
 				</div>
 			</div>
 		</aside>
 	</section>
-
-
-
-
-
-
-
 	<nav id="botao-contato">
 		<a href="https://www.instagram.com/therealonesofc/" target="_blank">
 			<div class="fab">
 				<button class="main">
+					<img src="img/ig-icon-contato.png" alt="contato_instagram">
 				</button>
 			</div>
 		</a>
 	</nav>
-
+	<script src="JS/main.js"></script>
+	<script src="JS/validarCompra.js"></script>
+	<script src="JS/validarCartao.js"></script>
+	<script src="JS/carrinho.js"></script>
 </body>
-
 </html>

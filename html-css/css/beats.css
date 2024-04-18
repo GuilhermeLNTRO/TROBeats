@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
+
+/* pagina beats */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #000, #313131, #434343, #666, #A4A4A4);
+}
+
+.nav-1 {
+    max-width: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: auto;
+    justify-content: space-between;
+    display: flex;
+    height: 100%;
+
+}
+
+.logo-1 {
+    margin-left: 50px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.nav-1 {
+    width: 100%;
+}
+
+.nav-1 img {
+    max-width: 75%;
+    width: 20%;
+}
+
+#img-nav {
+    width: 50px;
+}
+
+.botoes-menu {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inter;
+}
+
+.menu-1 {
+    width: 100%;
+    height: 100%;
+    font-size: 1.8em;
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 5%;
+}
+
+.menu-1 ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-1 a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.menu-1 a:hover {
+    color: #2C6BE5;
+}
+
+.login-1 {
+    justify-content: space-between;
+    padding: 20px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    width: 14%;
+    height: 14%;
+}
+
+.login-1 img {
+    width: 60px;
+    height: 60px;
+}
+
+/*fim menu */
+
+main {
+    margin-left: 10%;
+    width: 80%;
+    height: 450px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.card {
+    background-color: #9E9C9C;
+    width: 25%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #000;
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+.card img {
+    width: 80%;
+}
+
+.img-card {
+    background-color: #000;
+    border-radius: 10px 10px 10px 10px;
+    width: 80%;
+    margin: auto;
+    display: block;
+    margin-top: 35px;
+}
+
+.botoes-card {
+    margin-top: 10%;
+    margin-bottom: 7%;
+    text-align: center;
+}
+
+#precoP{
+    font-family: inter;
+    font-size: 2.0em;
+    padding-top: 10%;
+    text-align: center;
+    border-radius: 25px;
+    color: #155d1e;
+}
+
+.botao-compreja {
+    font-size: 1.4em;
+    width: 50%;
+    height: 45px;
+    margin: 10px;
+    background-color: #2C6BE5;
+    color: #FFF;
+    border: none;
+    border-radius: 25px;
+    font-family: inter;
+}
+
+.botao-compreja:hover {
+    box-shadow: 5px 5px 5px 5px grey;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+
+footer p {
+    color: #FFF;
+    margin-left: 10%;
+    margin-top: 9%;
+    width: 45%;
+    font: 100 1.9em inter;
+    padding-top: 2%;
+    padding-bottom: 6%;
+}
+
+.fab {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.fab button {
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    border-radius: 600px;
+    background-color: #D9D9D9;
+    border: none;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .4);
+    font-size: 24px;
+    color: white;
+
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+
+
+.fab button.main {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 600px;
+    background-color: #D9D9D9;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+}
+
+/*.fab button.main:before {
+    content: 'Contato';
+    color: #000;.fab button.main:active:before,
+.fab button.main:focus:before {
+    content: 'Contato';
+    color: #000;
+}
+}*/
+.fab button img {
+    width: 30px;
+}
+
+.fab button.main:hover {
+    box-shadow: 3px 3px 3px 3px #000;
+}
+
+.fab button.main:active,
+.fab button.main:focus {
+    outline: none;
+    background-color: #d9d9d9;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .5);
+}

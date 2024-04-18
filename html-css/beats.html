@@ -2,98 +2,126 @@
 <html lang="pt-br">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="The Real Ones, trap, beat, brasília, compra e venda" />
-	<meta name="description" content="Compre e venda seus beats no site do The Real Ones">
-	<link rel="stylesheet" type="text/css" href="beats.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="The Real Ones, trap, beat, brasília, compra e venda" />
+    <meta name="description" content="Compre e venda seus beats no site do The Real Ones">
+    <link rel="stylesheet" type="text/css" href="css/beats.css">
+    <title>The Real Ones</title>
+    <style>
+        #carrinho {
+            position: relative;
+            display: inline-block;
+        }
 
-	<title>The Real Ones</title>
+        #carrinho-numero {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
-	<header>
-		<nav class="nav-1">
-			<div class="logo-1"> <!-- começo -->
-				<a href="index.html">
-					<img src="img/logo-principal.png" alt="logo The Real Ones">
-				</a>
-			</div>
-			<div class="menu-1"> <!-- centralizado -->
-				<ul>
-					<li class="botoes-menu"><a href="index.html">HOME</a></li>
-					<li class="botoes-menu"><a href="#">BEATS</a></li>
-					<li class="botoes-menu"><a href="sobrenos.html">SOBRE NÓS</a></li>
-					<li class="botoes-menu"><a href="cadastro.html">CADASTRO</a></li>
-				</ul>
-			</div>
-			<div class="login-1"> <!-- final -->
-				<a href="carrinho.html">
-					<img id="img-nav" src="img/carrinho.png" alt="Carrinho de compras">
-				</a>
+    <header>
+        <nav class="nav-1">
+            <div class="logo-1">
+                <a href="index.html">
+                    <img src="img/logo-principal.png" alt="logo The Real Ones">
+                </a>
+            </div>
+            <div class="menu-1">
+                <ul>
+                    <li class="botoes-menu"><a href="index.html">HOME</a></li>
+                    <li class="botoes-menu"><a href="#">BEATS</a></li>
+                    <li class="botoes-menu"><a href="sobrenos.html">SOBRE NÓS</a></li>
+                    <li class="botoes-menu"><a href="cadastro.html">CADASTRO</a></li>
+                </ul>
+            </div>
+            <div class="login-1">
+                <a href="carrinho.html">
+                    <div id="carrinho">
+                        <img id="img-nav" src="img/carrinho.png" alt="Carrinho de compras">
+                        <div id="carrinho-numero">0</div>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <img id="img-nav" src="img/login.png" alt="Login/Cadastro">
+                </a>
+            </div>
+        </nav>
+    </header>
 
-				<a href="login.html">
-					<img id="img-nav" src="img/login.png" alt="Login/Cadastro">
-				</a>
-			</div>
-		</nav>
-	</header>
+    <main>
+        <div class="container">
+            <div class="card">
+                <div>
+                    <img class="img-card" src="img/capa-TRO.png" alt="">
+                </div>
+                <div class="preco">
+                    <p id="precoP">R$80,00</p>
+                </div>
+                <div class="botoes-card">
+                    <button class="botao-compreja" onclick="addToCart('Type-Beat: Tapes', 'R$80,00')">Compre já</button>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img class="img-card" src="img/logo-dourada.jpg" alt="">
+                </div>
+                <div class="preco">
+                    <p id="precoP">R$70,00</p>
+                </div>
+                <div class="botoes-card">
+                    <button class="botao-compreja" onclick="addToCart('Type-Beat: Golden', 'R$70,00')">Compre já</button>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img class="img-card" src="img/capa-card-beats.jpg" alt="">
+                </div>
+                <div class="preco">
+                    <p id="precoP">R$60,00</p>
+                </div>
+                <div class="botoes-card">
+                    <button class="botao-compreja" onclick="addToCart('Type-Beat: Mikezin', 'R$60,00')">Compre já</button>
+                </div>
+            </div>
+        </div>
+    </main>
 
+    <footer>
+        <p>Acesse os melhores beats disponíveis no momento e faça o seu próprio som que vai te levar ao topo!</p>
+        <nav id="botao-contato">
+            <a href="https://www.instagram.com/therealonesofc/" target="_blank">
+                <div class="fab">
+                    <button class="main">
+					<img src="img/ig-icon-contato.png" alt="contato_instagram">
 
-	<main>
-		<div class="container">
-			<div class="card">
-				<div>
-					<img class="img-card" src="img/capa-TRO.png" alt="">
-				</div>
-				<div class="botoes-card">
-					<a href="carrinho.html">
-						<button class="botao-compreja">Compre já</button>
-					</a>
-				</div>
-			</div>
-			<div class="card">
-				<div>
-					<img class="img-card" src="img/logo-dourada.jpg" alt="">
-				</div>
-				<div class="botoes-card">
-					<a href="carrinho.html">
-						<button class="botao-compreja">Compre já</button>
-					</a>
-				</div>
-			</div>
-			<div class="card">
-				<div>
-					<img class="img-card" src="img/capa-card-beats.jpg" alt="">
-				</div>
-				<div class="botoes-card">
-					<a href="carrinho.html">
-						<button class="botao-compreja">Compre já</button>
-					</a>
-				</div>
-			</div>
-		</div>
-	</main>
+                    </button>
+                </div>
+            </a>
+        </nav>
+    </footer>
+    <script>
+        let carrinhoCount = 0;
 
+        function addToCart(itemName, itemPrice) {
+            carrinhoCount++;
+            document.getElementById('carrinho-numero').innerText = carrinhoCount;
+            alert(itemName + " foi adicionado ao carrinho!");
+        }
+    </script>
 
-
-	<footer>
-
-		<p>Acesse os melhores beats disponíveis no momento e faça o seu próprio som que vai te levar ao topo!</p>
-
-
-		<nav id="botao-contato">
-			<a href="https://www.instagram.com/therealonesofc/" target="_blank">
-				<div class="fab">
-					<button class="main"></button>
-				</div>
-			</a>
-		</nav>
-	</footer>
-
-
-
-
+    <script src="JS/adicionarcarrinho.js"></script>
 </body>
-
 </html>
