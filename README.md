@@ -16,3 +16,6 @@ https://lucid.app/lucidchart/a54ca801-4c8e-4b62-8120-f047485dc3c2/edit?viewport_
 
 Documentação PI3:
 https://docs.google.com/document/d/1JoC7RKvac0oa8vuPglJL3B_QDlIjvdmN/edit?usp=sharing&ouid=107793424446522520207&rtpof=true&sd=true
+
+Apresentação de Slides Grupo 4-2024/1
+https://docs.google.com/presentation/d/1FdHuPQ0sdCB_BI0tod6ABPKPNQUzjJcM-ZWy8UU-XRU/edit?usp=sharing
